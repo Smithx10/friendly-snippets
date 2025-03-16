@@ -114,8 +114,18 @@
     "body": "if ${1:condition} {\n\t$2\n} else {\n\t$0\n}",
     "description": "Snippet for if else"
   },
-  "if err != nil": {
+  "if err != nil return": {
     "prefix": "_ir",
+    "body": "if err != nil {\n\treturn\n}",
+    "description": "Snippet for if err != nil return"
+  },
+  "if err != nil return nil": {
+    "prefix": "_irn",
+    "body": "if err != nil {\n\treturn nil\n}",
+    "description": "Snippet for if err != nil"
+  },
+  "if err != nil return nil error": {
+    "prefix": "_irne",
     "body": "if err != nil {\n\treturn ${1:nil}, ${2:err}\n}",
     "description": "Snippet for if err != nil"
   },
@@ -262,7 +272,7 @@
   "method declaration": {
     "prefix": [
       "_meth",
-      "fum"
+      "_fum"
     ],
     "body": "func (${1:receiver} ${2:type}) ${3:method}($4) $5 {\n\t$0\n}",
     "description": "Snippet for method declaration"
