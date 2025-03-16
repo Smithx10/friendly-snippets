@@ -116,17 +116,17 @@
   },
   "if err != nil return": {
     "prefix": "_ir",
-    "body": "if err != nil {\n\treturn\n}",
+    "body": "if err != nil {\n\treturn${1}\n}",
     "description": "Snippet for if err != nil return"
   },
   "if err != nil return nil": {
     "prefix": "_irn",
-    "body": "if err != nil {\n\treturn nil\n}",
+    "body": "if err != nil {\n\treturn ${1:nil}\n}\n",
     "description": "Snippet for if err != nil"
   },
   "if err != nil return nil error": {
     "prefix": "_irne",
-    "body": "if err != nil {\n\treturn ${1:nil}, ${2:err}\n}",
+    "body": "if err != nil {\n\treturn ${1:nil}, ${2:err}\n}\n",
     "description": "Snippet for if err != nil"
   },
   "fmt.Println": {
