@@ -114,14 +114,29 @@
     "body": "if ${1:condition} {\n\t$2\n} else {\n\t$0\n}",
     "description": "Snippet for if else"
   },
+  "inline if err != nil return": {
+    "prefix": "_iir",
+    "body": "if ${1}err := ${2}; err != nil {\n\treturn\n}",
+    "description": "Snippet for if err != nil return"
+  },
+  "inline if err != nil return error": {
+    "prefix": "_iire",
+    "body": "if ${1}err := ${2}; err != nil {\n\treturn err\n}",
+    "description": "Snippet for if err != nil return"
+  },
+  "inline if err != nil return nil error": {
+    "prefix": "_iirne",
+    "body": "if ${1}err := ${2}; err != nil {\n\treturn nil err\n}",
+    "description": "Snippet for if err != nil return"
+  },
   "if err != nil return": {
     "prefix": "_ir",
     "body": "if err != nil {\n\treturn\n}",
     "description": "Snippet for if err != nil return"
   },
-  "if err != nil return nil": {
-    "prefix": "_irn",
-    "body": "if err != nil {\n\treturn nil\n}\n",
+  "if err != nil return err": {
+    "prefix": "_ire",
+    "body": "if err != nil {\n\treturn err\n}\n",
     "description": "Snippet for if err != nil"
   },
   "if err != nil return nil error": {
