@@ -40,7 +40,11 @@
     "description": "Snippet for main package & function"
   },
   "function declaration": {
-    "prefix": "_func",
+    "prefix": [
+      "_func",
+      "_f",
+      "_fn"
+    ],
     "body": "func $1($2) $3 {\n\t$0\n}",
     "description": "Snippet for function declaration"
   },
