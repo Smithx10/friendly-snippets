@@ -239,7 +239,7 @@
     "description": "Snippet for http.Serve"
   },
   "errgroup new with context": {
-    "prefix": "_enw",
+    "prefix": "_ewith",
     "body": "g, ctx := errgroup.WithContext(ctx)",
     "description": "Snippet for errgroup anonymous goroutine declaration"
   },
@@ -250,7 +250,7 @@
   },
   "errgroup goroutine wait function": {
     "prefix": "_ewait",
-    "body": "if err := g.Wait(); err != nil {\n\t${0:return err}\n})",
+    "body": "if err := g.Wait(); err != nil {\n\t${0:return err}\n}",
     "description": "Snippet for errgroup wait"
   },
   "goroutine anonymous function": {
