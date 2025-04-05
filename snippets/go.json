@@ -238,6 +238,21 @@
     "body": "http.Serve(\"${1::8080}\", ${2:nil})",
     "description": "Snippet for http.Serve"
   },
+  "errgroup new with context": {
+    "prefix": "_enw",
+    "body": "g, ctx := errgroup.WithContext(ctx)",
+    "description": "Snippet for errgroup anonymous goroutine declaration"
+  },
+  "errgroup goroutine anonymous function": {
+    "prefix": "_ego",
+    "body": "g.Go(func() error {\n\t$0\n})",
+    "description": "Snippet for errgroup anonymous goroutine declaration"
+  },
+  "errgroup goroutine wait function": {
+    "prefix": "_ewait",
+    "body": "if err := g.Wait(); err != nil {\n\t${0:return err}\n})",
+    "description": "Snippet for errgroup wait"
+  },
   "goroutine anonymous function": {
     "prefix": "_go",
     "body": "go func($1) {\n\t$0\n}($2)",
